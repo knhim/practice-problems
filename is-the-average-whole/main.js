@@ -4,12 +4,14 @@ function isTheAverageWhole(numbersArray) {
   for (var i = 0; i < numbersArray.length; i++) {
     sum += numbersArray[i];
   }
-  avg = (sum / numbersArray.length - 1)
-  if (avg % 2 === 0) {
+  avg = (sum / numbersArray.length )
+  console.log(avg);
+  if (sum % numbersArray.length === 0) {
     return true;
   } else {
     return false;
   }
+
 }
 
 console.log('[1, 3, 4, 4]:', isTheAverageWhole([1, 3, 4, 4]));
