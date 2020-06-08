@@ -4,8 +4,7 @@ function isTheAverageWhole(numbersArray) {
   for (var i = 0; i < numbersArray.length; i++) {
     sum += numbersArray[i];
   }
-  avg = (sum / numbersArray.length )
-  console.log(avg);
+  avg = (sum / numbersArray.length
   if (sum % numbersArray.length === 0) {
     return true;
   } else {
