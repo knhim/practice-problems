@@ -10,8 +10,6 @@ function freeCoffeeCups (number) {
   var remainder = 0;
   if (number < 6) {
     return number;
-  } else if (number === 6) {
-    return number + 1;
   } else {
     remainder = Math.floor(number / 6); //use math.round to get a whole number
     return number + remainder;
