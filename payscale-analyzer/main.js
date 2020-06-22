@@ -12,7 +12,7 @@ at the end of the function return highest num - lowest num
 
 function payscaleAnalyzer (payList) {
   let lowestNumb = payList[0];
-  let highestNumb = payList[1];
+  let highestNumb = payList[0];
   for (let i = 0; i < payList.length; i++){
     if (lowestNumb > payList[i]) {
       lowestNumb = payList[i];
