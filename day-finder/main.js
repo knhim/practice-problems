@@ -9,8 +9,8 @@ Date.prototype.getDay() returns an integer, where 0 is Sunday
 */
 
 function dayFinder(stringDate) {
-  let date = new Date(stringDate);
-  let number =  date.getDay();
+  const date = new Date(stringDate);
+  const number =  date.getDay();
 
   switch(number) {
     case 0:
