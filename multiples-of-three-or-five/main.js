@@ -17,3 +17,26 @@ function solution(number){
     }
     return sum;
   }
+
+  // my unfinished solution
+
+  function solution(number){
+    const multiplesOfThree = [];
+    const multiplesOfFive = [];
+    let sum1 = 0;
+    let sum2 = 0;
+    let totalSum = sum1 + sum2;
+    
+    for (let i = 3; i < number; i += 3) {
+      if (number / i === 0 || number % i !== 0) {
+        sum1 += i;
+      }
+    }
+    
+    for (let i = 5; i < number; i += 5) {
+      if (number / i === 0 || number % i !== 0) {
+        sum2 += i;
+      }
+    }
+    return totalSum;
+  }
