@@ -11,6 +11,7 @@
 /*
 -create empty 'chunked' array
 -create 'index' start at 0
+-array.slice() returns a shallow copy of a portion of an array into a new one (starting , and up to but not including)
 -while index is less than array.length
   -push a slice of length 'size' from 'array' into 'chunked'
   -add 'size' to 'index'
