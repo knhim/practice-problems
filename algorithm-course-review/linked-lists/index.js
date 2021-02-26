@@ -79,4 +79,49 @@ class LinkedList {
     }
     previous.next = null;
   }
+
+  insertLast(data) {
+    const last = this.getLast();
+
+    if (last) {
+      // there are some existing nodes in our chain
+      last.next = new Node(data);
+    } else {
+      // the chain is empty!
+      this.head = new Node(data);
+    }
+  }
+
+  getAt(index) {
+    let counter = 0;
+    let node = this.head;
+
+    while (node) {
+      if (counter === index) {
+        return node;
+      }
+
+      counter++;
+      node = node.next;
+    }
+    return null;
+  }
+
+  removeAt(index) {
+    if (!this.head) {
+      return;
+    }
+
+    if (index === 0) {
+      this.head = this.head.next;
+      return;
+    }
+
+    const previous = this.getAt(index - 1);
+    if (!previous || !previous.next) {
+      return;
+    }
+
+    previous.next = previous.next.next;
+  }
 }
